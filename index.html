@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNLFQ7820Y"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KNLFQ7820Y');
+  
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Tinem la curent cetatenii intr-un mod simplu, usor de inteles, lucru care devine tot mai greu in lumea actuala, plina de clickbaituri si headlineuri senzationale! Proiect realizat de KEYRIF">
+    <meta name="author" content="keyrif">
+    <meta property="og:image" content="https://i.imgur.com/be6vjm8.png">
+    <title>Ce fac partidele?</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/css.css">
+
+    <style>
+        .header {
+        }
+        .header .overlay {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+
+        .btn-primary {
+            background-color: rgba(209, 155, 47, 0.5); 
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+        }
+        .btn-primary:hover {
+            background-color: rgba(209, 155, 47, 0.7);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .portfolio-card .portfolio-card-overlay {
+            background-color: rgba(255, 255, 255, 0.15); 
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+        }
+
+        .portfolio-card:hover .portfolio-card-caption h4,
+        .portfolio-card:hover .portfolio-card-caption p {
+            color: #333 !important; 
+        }
+
+        .custom-navbar.affix {
+            background-color: rgba(255, 255, 255, 0.6) !important;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+
+        @media (max-width: 991.98px) {
+            .custom-navbar .nav {
+                background: rgba(255, 255, 255, 0.6) !important;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                border-radius: 12px;
+                margin-top: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+        }
+        
+        .header .header-content .header-title .up,
+        .header .header-content .header-title .down {
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        }
+
+    
+        .accessibility-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px; 
+            background-color: #D19B2F; 
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            z-index: 1000;
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+        }
+
+        .accessibility-button:hover {
+            transform: scale(1.1) rotate(45deg);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+        }
+
+        .accessibility-button:active {
+            transform: scale(0.9) rotate(-45deg);
+            transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+    .accessibility-options {
+        position: fixed;
+        bottom: 80px;
+        left: 20px;
+       
+        background-color: rgba(255, 255, 255, 0.15); 
+        border: 1px solid rgba(255, 255, 255, 0.2); 
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+        z-index: 999;
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+        -webkit-backdrop-filter: blur(55px);
+        backdrop-filter: blur(55px); 
+        transition: background-color 0.3s ease, border 0.3s ease; 
+    }
+
+    .accessibility-options button {
+        background-color: transparent;
+        border: none;
+        color: #333; 
+        padding: 8px 12px;
+        text-align: left;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .accessibility-options button:hover {
+        background-color: rgba(209, 155, 47, 0.3); 
+    }
+
+    .accessibility-options input[type="checkbox"] {
+        margin-left: 10px;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+
+    body.dark-mode {
+        background-color: #1a1a1a;
+        color: #f0f0f0;
+    }
+
+
+    body.dark-mode .accessibility-options {
+        background-color: rgba(0, 0, 0, 0.15); 
+        border: 1px solid rgba(255, 255, 255, 0.1); 
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    }
+
+    body.dark-mode .accessibility-options button {
+        color: #f0f0f0;
+    }
+
+    body.dark-mode .accessibility-options button:hover {
+        background-color: rgba(209, 155, 47, 0.5); 
+    }
+
+
+
+
+
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+
+        body.dark-mode .custom-navbar {
+            background-color: rgba(50, 50, 50, 0.6) !important;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            color: #f0f0f0;
+        }
+        body.dark-mode .custom-navbar.affix {
+            background-color: rgba(50, 50, 50, 0.9) !important;
+            color: #f0f0f0;
+        }
+
+        body.dark-mode .custom-navbar .nav .link {
+            color: #f0f0f0;
+        }
+
+        body.dark-mode .custom-navbar .nav {
+            background: rgba(50, 50, 50, 0.9) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header .header-content .header-title .up,
+        body.dark-mode .header .header-content .header-title .up,
+        body.dark-mode .header .header-content .header-title .down { 
+            color: #f0f0f0; 
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+
+        body.dark-mode .header .overlay {
+            background-color: rgba(0, 0, 0, 0.4) !important;
+        }
+
+
+        body.dark-mode .section-title,
+        body.dark-mode .section-subtitle,
+        body.dark-mode .footer p {
+            color: #f0f0f0;
+        }
+
+        body.dark-mode .portfolio-card .portfolio-card-overlay {
+            background-color: rgba(0, 0, 0, 0.25) !important; 
+        }
+
+        body.dark-mode .portfolio-card:hover .portfolio-card-overlay {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+        }
+        body.dark-mode .portfolio-card-caption h4,
+        body.dark-mode .portfolio-card-caption p {
+            color: #333 !important;
+        }
+        body.dark-mode .portfolio-card:hover .portfolio-card-caption h4,
+        body.dark-mode .portfolio-card:hover .portfolio-card-caption p {
+            color: #333 !important; 
+        }
+
+
+
+        body.dark-mode .accessibility-options button:hover {
+            background-color: rgba(209, 155, 47, 0.4);
+        }
+
+        body.no-animations * {
+            transition: none !important;
+            animation: none !important;
+        }
+        body.no-animations .accessibility-button {
+            transition: none !important;
+            transform: none !important;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+        }
+
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<a href="#" class="up-button">
+    <span>⇧</span>
+</a>
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#"></a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="psd.html">PSD</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="pnl.html">PNL</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="udmr.html">UDMR</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="usr.html">USR</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="aur.html">AUR</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="sos.html">SOS</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="pot.html">POT</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>              
+    </nav>
+
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Ce fac partidele?</span>
+                <span class="down">Rămâi la curent într-un mod simplu!</span>
+            </h1>           
+
+<div>
+  <a href="#guvernare" class="btn btn-primary">Partide la guvernare</a>
+<a href="#opozitie" class="btn btn-primary">Partide in opozitie</a>
+<a href="about/index.html" class="btn btn-primary">Scopul proiectului</a>
+<a href="https://buymeacoffee.com/cefacpartidele" class="btn btn-primary">Sustine cu o cafea &#9749;</a>
+
+</div>
+        </div>                    
+    </header>
+
+    <section class="section" id="guvernare">
+        <div class="container text-center">
+            <h6 class="section-title mb-6">Coalitia actuala / Partide la guvernare</h6>
+       <p class="section-subtitle">Partide cu retorică pro-occidentală, fac parte coaliția de guvernare.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="psd.html" class="portfolio-card">
+                        <img src="https://i.imgur.com/EXzzaOV.png" class="portfolio-card-img" alt="">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Partidul Social Democrat</h5>
+                                <p class="font-weight-normal">Prim ministru: Nu a fost desemnat inca</p>
+                                <p class="font-weight-normal">Condus de: Sorin Grindeanu </p>
+                                <p class="font-weight-normal">Procent alegeri: 22,30%</p>
+                            </span>                      
+                        </span>                      
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="pnl.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Partidul_Na%C8%9Bional_Liberal_%28PNL%29_logo.svg/1200px-Partidul_Na%C8%9Bional_Liberal_%28PNL%29_logo.svg.png" class="img-responsive rounded" alt="">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Partidul National Liberal</h5>
+                                <p class="font-weight-normal">Prim ministru: Ilie Bolojan (pana in aprilie 2027)</p>
+                                <p class="font-weight-normal">Condus de: Ilie Bolojan</p>
+                                <p class="font-weight-normal">Procent alegeri: 14,28%</p>
+                            </span>                      
+                        </span>                          
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="udmr.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="https://i0.1616.ro/media/2/2701/33605/21875831/1/udmr-logo.jpg?width=640" class="img-responsive rounded" alt="">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Uniunea Democratica Maghiara din Romania</h5>
+                                <p class="font-weight-normal">Condus de: Hunor Kelemen</p>
+                                <p class="font-weight-normal">Procent alegeri: 6,38%</p>
+                            </span>                      
+                        </span>                          
+                    </a>
+                </div>
+                    
+                <div class="col-md-4">
+                    <a href="usr.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Logo_USR_2022_%281%29.svg/1200px-Logo_USR_2022_%281%29.svg.png" class="img-responsive rounded" alt="">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Uniunea Salvati Romania</h5>
+                                <p class="font-weight-normal">Condus de: Dominic Fritz</p>
+                                <p class="font-weight-normal">Procent alegeri: 12,26%</p>
+                            </span>                      
+                        </span>                      
+                    </a>              
+                </div>
+            </div>
+        </div>
+        
+    </section> 
+
+
+    <section class="section" id="opozitie">
+        <div class="container text-center">
+            <h6 class="section-title mb-6">Partide in opozitie</h6>
+            <p class="section-subtitle">Partide cu retorică populistă, fac parte din opoziția guvernamentală.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="aur.html" class="portfolio-card">
+                        <img src="https://i0.1616.ro/media/2/2701/33605/22073850/1/aur.png?width=1200" class="portfolio-card-img" alt="">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Alianta Unirea Romanilor</h5>
+                                <p class="font-weight-normal">Condus de: George Simion</p>
+                                <p class="font-weight-normal">Procent alegeri: 18,30%</p>
+                            </span>                      
+                        </span>                      
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="sos.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="https://upload.wikimedia.org/wikipedia/commons/2/26/SOS_Romania_logo.svg" class="img-responsive rounded" alt="">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <p class="font-weight-normal">Condus de: Diana Ivanovici Sosoaca</p>
+                                <p class="font-weight-normal">Procent alegeri: 7,76%</p>
+                            </span>                      
+                        </span>                          
+                    </a>
+                </div>  
+                <div class="col-md-4">
+                    <a href="pot.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="https://www.listamarci.ro/img/desene/64132.jpg" class="img-responsive rounded" alt="">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <p class="font-weight-normal">Condus de: Ana-Maria Gavrila</p>
+                                <p class="font-weight-normal">Procent alegeri: 6.39%</p>
+                            </span>                      
+                        </span>                          
+                    </a>
+                </div>        
+            </div></div>
+        
+    </section> 
+
+
+    <div class="container">
+        <footer class="footer">        
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a>           <p>Ce fac partidele? -  Proiect realizat de KEYRIF</p></a></p>
+        </footer>
+    </div>
+    
+    <button class="accessibility-button" id="accessibilityToggle">&#9881;</button>
+    <div class="accessibility-options" id="accessibilityOptions">
+        <button id="darkModeToggle">
+            Dark Mode [BETA] 
+            <input type="checkbox" id="darkModeCheckbox">
+        </button>
+        <button id="disableAnimationsToggle">
+            Oprește Animațiile 
+            <input type="checkbox" id="animationsCheckbox">
+        </button>
+    </div>
+
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/js.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.portfolio-card').on('click', function(e) {
+                e.preventDefault(); 
+
+                var $card = $(this);
+                var targetUrl = $card.attr('href');
+
+                $card.addClass('clicked-effect');
+
+                setTimeout(function() {
+                    window.location.href = targetUrl;
+                }, 500); 
+            });
+
+            const accessibilityToggle = document.getElementById('accessibilityToggle');
+            const accessibilityOptions = document.getElementById('accessibilityOptions');
+            const darkModeButton = document.getElementById('darkModeToggle');
+            const darkModeCheckbox = document.getElementById('darkModeCheckbox');
+            const disableAnimationsButton = document.getElementById('disableAnimationsToggle');
+            const animationsCheckbox = document.getElementById('animationsCheckbox');
+            const body = document.body;
+
+            accessibilityToggle.addEventListener('click', () => {
+                accessibilityOptions.style.display = accessibilityOptions.style.display === 'flex' ? 'none' : 'flex';
+            });
+
+            function updateCheckboxes() {
+                darkModeCheckbox.checked = body.classList.contains('dark-mode');
+                animationsCheckbox.checked = body.classList.contains('no-animations');
+            }
+
+            darkModeButton.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                if (body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                }
+                updateCheckboxes();
+            });
+
+            disableAnimationsButton.addEventListener('click', () => {
+                body.classList.toggle('no-animations');
+                if (body.classList.contains('no-animations')) {
+                    localStorage.setItem('animations', 'disabled');
+                } else {
+                    localStorage.setItem('animations', 'enabled');
+                }
+                updateCheckboxes();
+            });
+
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+            }
+            if (localStorage.getItem('animations') === 'disabled') {
+                body.classList.add('no-animations');
+            }
+            updateCheckboxes();
+        });
+    </script>
+</body>
+</html>
