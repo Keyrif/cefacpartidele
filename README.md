@@ -1,4 +1,4 @@
-[CLICK AICI PENTRU A ACCESA](https://keyrifnope.github.io/cefacpartidele/)
+[CLICK AICI PENTRU A ACCESA](https://keyrif.github.io/cefacpartidele/)
 
 
 Un website care arata activitatea partidelor din Romania. 
